@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="chenran" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="字典和结构化数据5.1字典数据类型字典的索引被称为“键”，键及其关联的值称为“键-值”对。 myCat = {&amp;apos;size&amp;apos;: &amp;apos;fat&amp;apos;, &amp;apos;color&amp;apos;: &amp;apos;gray&amp;apos;, &amp;apos;disposition&amp;apos;: &amp;apos;loud&amp;apos;} print(myCat[&amp;apos;size&amp;apos;])">
+<meta property="og:type" content="article">
+<meta property="og:title" content="chenran">
+<meta property="og:url" content="http://yoursite.com/2020/02/28/第五章复习/index.html">
+<meta property="og:site_name" content="chenran">
+<meta property="og:description" content="字典和结构化数据5.1字典数据类型字典的索引被称为“键”，键及其关联的值称为“键-值”对。 myCat = {&amp;apos;size&amp;apos;: &amp;apos;fat&amp;apos;, &amp;apos;color&amp;apos;: &amp;apos;gray&amp;apos;, &amp;apos;disposition&amp;apos;: &amp;apos;loud&amp;apos;} print(myCat[&amp;apos;size&amp;apos;])">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-02-28T13:03:46.727Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="chenran">
+<meta name="twitter:description" content="字典和结构化数据5.1字典数据类型字典的索引被称为“键”，键及其关联的值称为“键-值”对。 myCat = {&amp;apos;size&amp;apos;: &amp;apos;fat&amp;apos;, &amp;apos;color&amp;apos;: &amp;apos;gray&amp;apos;, &amp;apos;disposition&amp;apos;: &amp;apos;loud&amp;apos;} print(myCat[&amp;apos;size&amp;apos;])">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/02/28/第五章复习/">
+
+
+
+
+
+  <title> | chenran</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">chenran</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/28/第五章复习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="RONY CHEN">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="chenran">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline"></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-28T20:22:07+08:00">
+                2020-02-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.1k 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="字典和结构化数据"><a href="#字典和结构化数据" class="headerlink" title="字典和结构化数据"></a>字典和结构化数据</h1><h2 id="5-1字典数据类型"><a href="#5-1字典数据类型" class="headerlink" title="5.1字典数据类型"></a>5.1字典数据类型</h2><p>字典的索引被称为“键”，键及其关联的值称为“键-值”对。</p>
+<pre><code>myCat = {&apos;size&apos;: &apos;fat&apos;, &apos;color&apos;: &apos;gray&apos;, &apos;disposition&apos;: &apos;loud&apos;}
+print(myCat[&apos;size&apos;])
+
+fat</code></pre><p>字典仍然可以用整数值作为键:</p>
+<pre><code>spam = {12345: &apos;Luggage Combination&apos;, 42: &apos;The Answer&apos;} </code></pre><h3 id="5-1-1-字典与列表"><a href="#5-1-1-字典与列表" class="headerlink" title="5.1.1 字典与列表"></a>5.1.1 字典与列表</h3><p>字典是不排序的，所以不能像列表那样切片</p>
+<pre><code>eggs = {&apos;name&apos;: &apos;Zophie&apos;, &apos;species&apos;: &apos;cat&apos;, &apos;age&apos;: &apos;8&apos;}
+ham = {&apos;species&apos;: &apos;cat&apos;, &apos;age&apos;: &apos;8&apos;, &apos;name&apos;: &apos;Zophie&apos;}
+eggs = ham
+
+True</code></pre><p>虽然字典是不排序的，但可以用任意值作为键。</p>
+<h3 id="5-1-2-keys-、values-和-items-方法"><a href="#5-1-2-keys-、values-和-items-方法" class="headerlink" title="5.1.2 keys()、values()和 items()方法"></a>5.1.2 keys()、values()和 items()方法</h3><p>对应于字典的键、值和键-值对：keys()、values()和items()</p>
+<p>这些方法返回的值不是真正的列表，它们不能被修改，没有append()方法。</p>
+<p>但这些数据类型（分别是dict_keys、dict_values和dict_items）可以用于for循环。</p>
+<pre><code>spam = {&apos;color&apos;: &apos;red&apos;, &apos;age&apos;: 42}
+for v in spam.values():
+    print(v)
+
+red
+42
+
+for k in spam.keys():
+    print(k)
+
+color
+age
+
+for i in spam.items():
+    print(i)
+
+(&apos;color&apos;, &apos;red&apos;)
+(&apos;age&apos;, 42)</code></pre><p>如何得到真正的列表：<br>    spam = {‘color’: ‘red’, ‘age’: 42}<br>    spam.keys()<br>    print(list(spam.keys()))</p>
+<pre><code>[&apos;color&apos;, &apos;age&apos;]</code></pre><p>list(spam.keys())代码行接受keys()函数返回的dict_keys值，并传递给list()。然后返回一个列表，即[‘color’, ‘age’]。</p>
+<h3 id="5-1-3-检查字典中是否存在键或值"><a href="#5-1-3-检查字典中是否存在键或值" class="headerlink" title="5.1.3 检查字典中是否存在键或值"></a>5.1.3 检查字典中是否存在键或值</h3><p>使用in和not in 操作符</p>
+<pre><code>spam = {&apos;name&apos;: &apos;Zophie&apos;, &apos;age&apos;: 7}
+print(&apos;name&apos; in spam.keys()) 
+
+True</code></pre><h3 id="5-1-4-get-方法"><a href="#5-1-4-get-方法" class="headerlink" title="5.1.4 get()方法"></a>5.1.4 get()方法</h3><p>字典有一个get()方法，它有两个参数：要取得其值的键，以及如果该键不存在时，返回的备用值。</p>
+<pre><code>picnicItems = {&apos;apples&apos;: 5, &apos;cups&apos;: 2}
+print(&apos;I am bringing &apos; + str(picnicItems.get(&apos;cups&apos;, 0)) + &apos; cups.&apos;)
+
+I am bringing 2 cups. </code></pre><h3 id="5-1-5-setdefault-方法"><a href="#5-1-5-setdefault-方法" class="headerlink" title="5.1.5 setdefault()方法"></a>5.1.5 setdefault()方法</h3><p>我们需要为字典中某个键设置一个默认值，当该键没有任何值时使用它。</p>
+<p>setdefault()方法提供了一种方式，在一行中完成这件事。传递给该方法的第一个参数，是要检查的键。第二个参数，是如果该键不存在时要设置的值。如果该键确实存在，方法就会返回键的值。</p>
+<pre><code>spam = {&apos;name&apos;: &apos;Pooka&apos;, &apos;age&apos;: 5}
+print(spam.setdefault(&apos;color&apos;, &apos;black&apos;))
+print(spam)
+print( spam.setdefault(&apos;color&apos;, &apos;white&apos;))
+print(spam)</code></pre><p>  （图）</p>
+<p>第一次调用setdefault()时，spam变量中的字典变为{‘color’: ‘black’, ‘age’: 5, ‘name’: ‘Pooka’}。该方法返回值’black’，因为现在该值被赋给键’color’。当spam.setdefault(‘color’, ‘white’)接下来被调用时，该键的值“没有”被改变成’white’，因为spam变量已经有名为’color’的键。</p>
+<pre><code>message = &apos;It was a bright cold day in April, and the clocks were striking thirteen.&apos;
+
+count = {}
+for character in message:
+    count.setdefault(character, 0)
+    count[character] = count[character] + 1
+print(count)</code></pre><p>（图）</p>
+<h2 id="5-2-漂亮打印"><a href="#5-2-漂亮打印" class="headerlink" title="5.2 漂亮打印"></a>5.2 漂亮打印</h2><p>导入pprint模块，就可以使用pprint()和pformat()函数，它们将“漂亮打印”一个字典的字。如果想要字典中表项的显示比print()的输出结果更干净，这就有用了。</p>
+<pre><code>import pprintmessage = &apos;It was a bright cold day in April, and the clocks were strikingthirteen.&apos;
+count = {}
+
+for character in message:
+    count.setdefault(character, 0)
+    count[character] = count[character] + 1
+pprint.pprint(count)
+
+
+希望得到漂亮打印的文本作为字符串，而不是显示在屏幕上，那就调用pprint.pformat()。
+
+pprint.pprint(someDictionaryValue)
+print(pprint.pformat(someDictionaryValue)</code></pre><h2 id="5-3-嵌套的字典和列表"><a href="#5-3-嵌套的字典和列表" class="headerlink" title="5.3 嵌套的字典和列表"></a>5.3 嵌套的字典和列表</h2><pre><code>allGuests = {&apos;Alice&apos;: {&apos;apples&apos;: 5, &apos;pretzels&apos;: 12},
+             &apos;Bob&apos;: {&apos;ham sandwiches&apos;: 3, &apos;apples&apos;: 2},
+             &apos;Carol&apos;: {&apos;cups&apos;: 3, &apos;apple pies&apos;: 1}}
+def totalBrought(guests, item): 
+    numBrought = 0
+    for k, v in guests.items():
+        numBrought = numBrought + v.get(item, 0)
+    return numBrought
+
+print(&apos;Number of things being brought:&apos;)
+print(&apos; - Apples &apos; + str(totalBrought(allGuests, &apos;apples&apos;)))
+print(&apos; -  Cups &apos; + str(totalBrought(allGuests, &apos;cups&apos;)))
+print(&apos; -  Cakes &apos; + str(totalBrought(allGuests, &apos;cakes&apos;)))
+print(&apos; -  Ham Sandwiches &apos; + str(totalBrought(allGuests, &apos;ham sandwiches&apos;)))
+print(&apos; -  Apple Pies &apos; + str(totalBrought(allGuests, &apos;apple pies&apos;)))</code></pre><p>（图）</p>
+<p>在totalBrought()函数中，for循环迭代guests中的每个键值对。在这个循环里，客人的名字字符串赋给k，他们带来的野餐食物的字典赋给v。如果食物参数是字典中存在的键，它的值  （数量） 就添加到numBrought。如果它不是键，get()方法就返回0， 添加到numBrought。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+    <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------帅哥靓女<i class="fa fa-heart"></i>感谢你们的阅读-------------</div>
+    
+</div>
+
+  
+</div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/02/28/第四章复习/" rel="next" title>
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/02/29/第六章复习/" rel="prev" title>
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="RONY CHEN">
+            
+              <p class="site-author-name" itemprop="name">RONY CHEN</p>
+              <p class="site-description motion-element" itemprop="description">保持谦逊，渴望成功</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/ranIrving" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/6409755535" target="_blank" title="Weibo">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:3482918304@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#字典和结构化数据"><span class="nav-number">1.</span> <span class="nav-text">字典和结构化数据</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#5-1字典数据类型"><span class="nav-number">1.1.</span> <span class="nav-text">5.1字典数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-1-字典与列表"><span class="nav-number">1.1.1.</span> <span class="nav-text">5.1.1 字典与列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-2-keys-、values-和-items-方法"><span class="nav-number">1.1.2.</span> <span class="nav-text">5.1.2 keys()、values()和 items()方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-3-检查字典中是否存在键或值"><span class="nav-number">1.1.3.</span> <span class="nav-text">5.1.3 检查字典中是否存在键或值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-4-get-方法"><span class="nav-number">1.1.4.</span> <span class="nav-text">5.1.4 get()方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-5-setdefault-方法"><span class="nav-number">1.1.5.</span> <span class="nav-text">5.1.5 setdefault()方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-漂亮打印"><span class="nav-number">1.2.</span> <span class="nav-text">5.2 漂亮打印</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-3-嵌套的字典和列表"><span class="nav-number">1.3.</span> <span class="nav-text">5.3 嵌套的字典和列表</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+//访客
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">RONY CHEN</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">21.3k</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共21.3k字</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"tagMode":false});</script></body>
+</html>

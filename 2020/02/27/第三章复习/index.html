@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="chenran" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="第三章 函数3.1 def语句和参数def hello(name):#1     print(&amp;apos;Hello&amp;apos; + name)  hello(&amp;apos; Alice&amp;apos;) hello(&amp;apos; Bob&amp;apos;)自定义函数 hello(),’name’为变量，当hello()函数被调用时，参数就存放在其中。 如果你在 hello(‘Bob’) 之后添加 print">
+<meta property="og:type" content="article">
+<meta property="og:title" content="chenran">
+<meta property="og:url" content="http://yoursite.com/2020/02/27/第三章复习/index.html">
+<meta property="og:site_name" content="chenran">
+<meta property="og:description" content="第三章 函数3.1 def语句和参数def hello(name):#1     print(&amp;apos;Hello&amp;apos; + name)  hello(&amp;apos; Alice&amp;apos;) hello(&amp;apos; Bob&amp;apos;)自定义函数 hello(),’name’为变量，当hello()函数被调用时，参数就存放在其中。 如果你在 hello(‘Bob’) 之后添加 print">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-02-27T02:53:02.751Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="chenran">
+<meta name="twitter:description" content="第三章 函数3.1 def语句和参数def hello(name):#1     print(&amp;apos;Hello&amp;apos; + name)  hello(&amp;apos; Alice&amp;apos;) hello(&amp;apos; Bob&amp;apos;)自定义函数 hello(),’name’为变量，当hello()函数被调用时，参数就存放在其中。 如果你在 hello(‘Bob’) 之后添加 print">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/02/27/第三章复习/">
+
+
+
+
+
+  <title> | chenran</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">chenran</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/27/第三章复习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="RONY CHEN">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="chenran">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline"></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-27T09:23:49+08:00">
+                2020-02-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.1k 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="第三章-函数"><a href="#第三章-函数" class="headerlink" title="第三章 函数"></a>第三章 函数</h1><h2 id="3-1-def语句和参数"><a href="#3-1-def语句和参数" class="headerlink" title="3.1 def语句和参数"></a>3.1 def语句和参数</h2><pre><code>def hello(name):#1
+    print(&apos;Hello&apos; + name)
+
+hello(&apos; Alice&apos;)
+hello(&apos; Bob&apos;)</code></pre><p>自定义函数 hello(),’name’为变量，当hello()函数被调用时，参数就存放在其中。</p>
+<p>如果你在 hello(‘Bob’) 之后添加 print(name)，程序会报 NameError，因为没有名为 name 的变量。在函数调用 hello(‘Bob’) 返回后，这个变量被销毁了，所以print(name) 会引用一个不存在的变量 name。</p>
+<h2 id="3-2-返回值和-return语句"><a href="#3-2-返回值和-return语句" class="headerlink" title="3.2 返回值和 return语句"></a>3.2 返回值和 return语句</h2><ol>
+<li>用def语句创建函数时，可以用 return 语句指定应该返回什么值。return 语句包含以下部分：return 关键字；函数应该返回的值或表达式。</li>
+</ol>
+<pre><code>import random
+def getAnswer(answerNumber):
+    if answerNumber == 1:
+        return &apos;It is certain&apos;
+    elif answerNumber == 2:
+        return &apos;It is decidedly so&apos;
+    elif answerNumber == 3:
+        return &apos;Yes&apos;
+    elif answerNumber == 4:
+        return &apos;Reply hazy try again&apos;
+    elif answerNumber == 5:
+        return &apos;Ask again later&apos;
+    elif answerNumber == 6:
+        return &apos;Concentrate and ask again&apos;
+    elif answerNumber == 7:
+        return &apos;My reply is no&apos;
+    elif answerNumber == 8:
+        return &apos;Outlook not so good&apos;
+    elif answerNumber == 9:
+        return &apos;Very doubtful&apos;
+r = random.randint(1, 9)
+fortune = getAnswer(r)
+print(fortune)
+
+#print(getAnswer(random.randint(1,9)))</code></pre><p>(图)</p>
+<p>注释：定义getAnswer()函数，但不被调用，执行会跳过其中代码。接着random.randint()函数被调用，带两个参数 1和9 ，并且生成的一个随机整数值被存在一个名为r的变量中。</p>
+<p>然后getAnswer()函数被调用，以r作为参数。r的值被保存到名为answerNumber的变元中。根据answerNumber中的值，函数返回许多可能字符串中的一个。程序执行返回到程序底部的代码行，即原来调用getAnswer()的地方。返回的字符串被赋给一个名为fortune变量，然后它又被传递给print()调用，并被打印在屏幕上。</p>
+<h2 id="3-3"><a href="#3-3" class="headerlink" title="3.3"></a>3.3</h2><p>在Python中有一个值称为None，它表示没有值。None是NoneType数据类型的唯一值。</p>
+<h2 id="3-4-关键字参数和-print"><a href="#3-4-关键字参数和-print" class="headerlink" title="3.4 关键字参数和 print()"></a>3.4 关键字参数和 print()</h2><ol>
+<li><p>print()函数有可选的   变元end和sep，分别指定在参数末尾打印什么，以及在   参数之间打印什么来隔开它们。</p>
+<pre><code>print(&apos;Hello&apos;, end=&apos;&apos;)
+print(&apos;World&apos;)
+HelloWorld</code></pre></li>
+</ol>
+<p>注释：end关键字参数，将它变成另一个字符串；sep关键字参数，替换掉默认的分隔字符串。</p>
+<h2 id="3-5-局部和全局作用域"><a href="#3-5-局部和全局作用域" class="headerlink" title="3.5 局部和全局作用域"></a>3.5 局部和全局作用域</h2><ol>
+<li><p>只有全局变量能用于全局作用域</p>
+</li>
+<li><p>局部作用域不能使用其他局部作用域内的变量，即一个函数中的局部变量完全与其他函数中的局部变量分隔开来。</p>
+</li>
+<li><p>全局变量可以在局部作用域中读取</p>
+</li>
+<li><p>名称相同的局部变量和全局变量</p>
+</li>
+</ol>
+<h2 id="3-6-global语句"><a href="#3-6-global语句" class="headerlink" title="3.6 global语句"></a>3.6 global语句</h2><p>如果需要在一个函数内修改全局变量，就使用global语句。</p>
+<p>有4条法则 ，来区分一个变量是处于局部作用域还是全局作用域：</p>
+<p>1．如果变量在全局作用域  中使用（   即在所有函数之外），它就总是全局变量。</p>
+<p>2．如果在一个函数中，有针对该变量的global语句，它就是全局变量。</p>
+<p>3．否则，如果该变量用于函数中的赋值语句，它就是局部变量。</p>
+<p>4．但是，如果该变量没有用在赋值语句中，它就是全局变量。</p>
+<pre><code>def spam():
+  global eggs 
+  eggs = &apos;spam&apos;# this is the global   
+def bacon():    
+  eggs = &apos;bacon&apos; # this is a local   
+def ham():     
+  print(eggs) # this is the global    
+eggs = 42 # this is the global  
+spam()   
+print(eggs）</code></pre><p>（图）</p>
+<h2 id="3-7-异常处理"><a href="#3-7-异常处理" class="headerlink" title="3.7 异常处理"></a>3.7 异常处理</h2><p>错误可以由try和except语句来处理。那些可能出错的语句被放在try子句中。如果错误发生，程序执行就转到接下来的except子句开始处。</p>
+<pre><code>def spam(divideBy):
+    try: 
+        return 42 / divideBy
+    except ZeroDivisionError:
+        print(&apos;Error: Invalid argument.&apos;) 
+        print(spam(2))
+        print(spam(12))
+        print(spam(0))
+        print(spam(1)</code></pre><p>（图）</p>
+<h2 id="3-8-小程序：猜数字"><a href="#3-8-小程序：猜数字" class="headerlink" title="3.8 小程序：猜数字"></a>3.8 小程序：猜数字</h2><pre><code># This is a guess the number game.
+import random
+secretNumber = random.randint(1, 20)
+print(&apos;I am thinking of a number between 1 and 20.&apos;)
+
+# Ask the player to guess 6 times.
+for guessesTaken in range(1, 7):
+    print(&apos;Take a guess.&apos;)
+    guess = int(input())
+
+    if guess &lt; secretNumber:
+        print(&apos;Your guess is too low.&apos;)
+    elif guess &gt; secretNumber:
+        print(&apos;Your guess is too high.&apos;)
+    else:
+        break # This condition is the correct guess!
+
+if guess == secretNumber:
+    print(&apos;Good job! You guessed my number in &apos; + str(guessesTaken) + &apos; guesses!&apos;)
+else:
+    print(&apos;Nope. The number I was thinking of was &apos; + str(secretNumber))</code></pre><p>（图）</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+    <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------帅哥靓女<i class="fa fa-heart"></i>感谢你们的阅读-------------</div>
+    
+</div>
+
+  
+</div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/02/26/第二章复习/" rel="next" title>
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/02/28/第四章复习/" rel="prev" title>
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="RONY CHEN">
+            
+              <p class="site-author-name" itemprop="name">RONY CHEN</p>
+              <p class="site-description motion-element" itemprop="description">保持谦逊，渴望成功</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/ranIrving" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/6409755535" target="_blank" title="Weibo">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:3482918304@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第三章-函数"><span class="nav-number">1.</span> <span class="nav-text">第三章 函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-def语句和参数"><span class="nav-number">1.1.</span> <span class="nav-text">3.1 def语句和参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-返回值和-return语句"><span class="nav-number">1.2.</span> <span class="nav-text">3.2 返回值和 return语句</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3"><span class="nav-number">1.3.</span> <span class="nav-text">3.3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-4-关键字参数和-print"><span class="nav-number">1.4.</span> <span class="nav-text">3.4 关键字参数和 print()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-局部和全局作用域"><span class="nav-number">1.5.</span> <span class="nav-text">3.5 局部和全局作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-6-global语句"><span class="nav-number">1.6.</span> <span class="nav-text">3.6 global语句</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-7-异常处理"><span class="nav-number">1.7.</span> <span class="nav-text">3.7 异常处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-8-小程序：猜数字"><span class="nav-number">1.8.</span> <span class="nav-text">3.8 小程序：猜数字</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+//访客
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">RONY CHEN</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">21.3k</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共21.3k字</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"tagMode":false});</script></body>
+</html>

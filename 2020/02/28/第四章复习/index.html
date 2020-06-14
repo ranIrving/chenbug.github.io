@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="chenran" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="列表4.1 列表数据类型“列表”是一个值，它包含多个字构成的序列。 列表中第一个值的下标是0，第二个值的下标是1，第三个值的下标是2，依此类推。 列表也可以包含其他列表值。这些列表的列表中的值，可以通过多重下标来访问： spam = [[&amp;apos;cat&amp;apos;,&amp;apos;dog&amp;apos;,&amp;apos;pig&amp;apos;],[&amp;apos;10&amp;apos;,&amp;apos;12&amp;apos;,&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="chenran">
+<meta property="og:url" content="http://yoursite.com/2020/02/28/第四章复习/index.html">
+<meta property="og:site_name" content="chenran">
+<meta property="og:description" content="列表4.1 列表数据类型“列表”是一个值，它包含多个字构成的序列。 列表中第一个值的下标是0，第二个值的下标是1，第三个值的下标是2，依此类推。 列表也可以包含其他列表值。这些列表的列表中的值，可以通过多重下标来访问： spam = [[&amp;apos;cat&amp;apos;,&amp;apos;dog&amp;apos;,&amp;apos;pig&amp;apos;],[&amp;apos;10&amp;apos;,&amp;apos;12&amp;apos;,&amp;">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-02-28T06:39:25.115Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="chenran">
+<meta name="twitter:description" content="列表4.1 列表数据类型“列表”是一个值，它包含多个字构成的序列。 列表中第一个值的下标是0，第二个值的下标是1，第三个值的下标是2，依此类推。 列表也可以包含其他列表值。这些列表的列表中的值，可以通过多重下标来访问： spam = [[&amp;apos;cat&amp;apos;,&amp;apos;dog&amp;apos;,&amp;apos;pig&amp;apos;],[&amp;apos;10&amp;apos;,&amp;apos;12&amp;apos;,&amp;">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/02/28/第四章复习/">
+
+
+
+
+
+  <title> | chenran</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">chenran</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/28/第四章复习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="RONY CHEN">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="chenran">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline"></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-28T13:46:20+08:00">
+                2020-02-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.4k 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  6 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><h2 id="4-1-列表数据类型"><a href="#4-1-列表数据类型" class="headerlink" title="4.1 列表数据类型"></a>4.1 列表数据类型</h2><p>“列表”是一个值，它包含多个字构成的序列。</p>
+<p>列表中第一个值的下标是0，第二个值的下标是1，第三个值的下标是2，依此类推。</p>
+<p>列表也可以包含其他列表值。这些列表的列表中的值，可以通过多重下标来访问：</p>
+<pre><code>spam = [[&apos;cat&apos;,&apos;dog&apos;,&apos;pig&apos;],[&apos;10&apos;,&apos;12&apos;,&apos;15&apos;]]
+spam[0]
+[&apos;cat&apos;,&apos;dog&apos;,&apos;pig&apos;]</code></pre><p>整数值−1指的是列表中的最后一个下标，−2指的是列表中倒数第二个下标，以此类推。</p>
+<p>“ 切片”可以从列表中取得多个值，结果是一个新列表。切片输入在一对方括号中，像下标一样，但它有两个冒号分隔的整数。</p>
+<pre><code>spam[1:4]是一个列表和切片
+
+spam = [&apos;cat&apos;,&apos;dog&apos;,&apos;pig&apos;]
+spam[0:3]
+[&apos;cat&apos;,&apos;dog&apos;,&apos;pig&apos;]
+spam[1:3]
+[&apos;dog&apos;,&apos;pig&apos;]</code></pre><p>可以省略切片中冒号两边的一个下标或两个下标。省略第一个下标相当于使用0，或列表的开始。省略第二个下标相当于使用列表的长度，意味着分片直至列表的末尾。</p>
+<h3 id="4-1-1-用len-取得列表的长度"><a href="#4-1-1-用len-取得列表的长度" class="headerlink" title="4.1.1 用len()取得列表的长度"></a>4.1.1 用len()取得列表的长度</h3><pre><code>spam = [&apos;cat&apos;,&apos;dog&apos;,&apos;pig&apos;]
+len(spam)
+3</code></pre><h3 id="4-1-2-用下标改变列表中的值"><a href="#4-1-2-用下标改变列表中的值" class="headerlink" title="4.1.2 用下标改变列表中的值"></a>4.1.2 用下标改变列表中的值</h3><pre><code>spam = [&apos;cat&apos;,&apos;dog&apos;,&apos;pig&apos;]
+spam[1] = &apos;mouse&apos;
+spam
+[&apos;cat&apos;,&apos;mouse&apos;,&apos;pig&apos;]</code></pre><h3 id="4-1-3-列表连接和列表复制"><a href="#4-1-3-列表连接和列表复制" class="headerlink" title="4.1.3 列表连接和列表复制"></a>4.1.3 列表连接和列表复制</h3><p>‘+’操作符可以连接两个列表，得到一个新列表；’*’操作符可以用于一个列表和一个整数，实现列表的复制。</p>
+<h3 id="4-1-4-用del语句从列表中删除值"><a href="#4-1-4-用del语句从列表中删除值" class="headerlink" title="4.1.4 用del语句从列表中删除值"></a>4.1.4 用del语句从列表中删除值</h3><p>del语句将删除列表中下标处的值，表中被删除值后面的所有值，都将向前移动一个下标。</p>
+<pre><code>spam = [&apos;cat&apos;,&apos;dog&apos;,&apos;pig&apos;]
+del spam[2]
+spam
+[&apos;cat&apos;,&apos;dog&apos;]</code></pre><h2 id="4-2-使用列表"><a href="#4-2-使用列表" class="headerlink" title="4.2 使用列表"></a>4.2 使用列表</h2><h3 id="4-2-1-列表用于循环"><a href="#4-2-1-列表用于循环" class="headerlink" title="4.2.1 列表用于循环"></a>4.2.1 列表用于循环</h3><pre><code>    supplies = [&apos;pens&apos;, &apos;staplers&apos;, &apos;flame-throwers&apos;, &apos;binders&apos;] 
+    for i in range(len(supplies)): #range(len(supplies))将迭代supplies的所有下标，无论它包含多少表项。
+
+    print(&apos;Index &apos; + str(i) + &apos; in supplies is: &apos; + supplies[i])
+
+Index 0 in supplies is: pens
+Index 1 in supplies is: staplers
+Index 2 in supplies is: flame-throwers
+Index 3 in supplies is: binders </code></pre><h3 id="4-2-2-in和not-in-操作符"><a href="#4-2-2-in和not-in-操作符" class="headerlink" title="4.2.2 in和not in 操作符"></a>4.2.2 in和not in 操作符</h3><p>利用in和not in操作符，   可以确定一个值否在列表中。</p>
+<h3 id="4-2-3-多重赋值技巧和操作"><a href="#4-2-3-多重赋值技巧和操作" class="headerlink" title="4.2.3 多重赋值技巧和操作"></a>4.2.3 多重赋值技巧和操作</h3><p>变量的数目和列表的长度必须严格相等，否则Python将给出ValueError</p>
+<h2 id="4-3-方法"><a href="#4-3-方法" class="headerlink" title="4.3 方法"></a>4.3 方法</h2><h3 id="4-3-1-用index-方法在列表中查找值"><a href="#4-3-1-用index-方法在列表中查找值" class="headerlink" title="4.3.1 用index()方法在列表中查找值"></a>4.3.1 用index()方法在列表中查找值</h3><pre><code>cat = [&apos;fat&apos;, &apos;black&apos;, &apos;loud&apos;]
+
+print(cat.index(&apos;black&apos;))
+
+1</code></pre><h3 id="4-3-2-用append-和insert-方法在列表中添加值"><a href="#4-3-2-用append-和insert-方法在列表中添加值" class="headerlink" title="4.3.2 用append()和insert()方法在列表中添加值"></a>4.3.2 用append()和insert()方法在列表中添加值</h3><p>append()方法调用，将参数  添加到列表末尾。insert()方法可以在列表任意下标处插入一个值。</p>
+<p>insert()方法的第一个参数是新值的下标  ，第二个参数是要插入的新值。</p>
+<h3 id="4-3-3-用remove-方法从列表中删除值"><a href="#4-3-3-用remove-方法从列表中删除值" class="headerlink" title="4.3.3 用remove()方法从列表中删除值"></a>4.3.3 用remove()方法从列表中删除值</h3><p>给 remove()方法传入一个值，它将从被调用的列表中删除，如果该值在列表中出现多次，只有第一次出现的值会被删除。</p>
+<h3 id="4-3-4-用sort-方法将列表中的值排序"><a href="#4-3-4-用sort-方法将列表中的值排序" class="headerlink" title="4.3.4 用sort()方法将列表中的值排序"></a>4.3.4 用sort()方法将列表中的值排序</h3><p>数值的 列表或字符串的列表，能用sort()方法排序；也可以指定reverse关键字参数为True，让sort()按<strong>逆序排序</strong>。</p>
+<p>sort()方法对字符串排序时，使用“ASCII字符顺序”， 而不是实际的字典顺序。这意味着大写字母排在小写字母之前。因此在排序时，小写的a在大写的Z之后。</p>
+<pre><code>spam = [&apos;Alice&apos;, &apos;ants&apos;, &apos;Bob&apos;, &apos;badgers&apos;, &apos;Carol&apos;, &apos;cats&apos;]
+spam.sort()
+print(spam)
+
+[&apos;Alice&apos;, &apos;Bob&apos;, &apos;Carol&apos;, &apos;ants&apos;, &apos;badgers&apos;, &apos;cats&apos;]</code></pre><p>如果需要按照普通的字典顺序来排序，就在sort()方法调用时，将关键字参数key设置为str.lower。</p>
+<pre><code>    spam = [&apos;a&apos;, &apos;z&apos;, &apos;A&apos;, &apos;Z&apos;]
+    spam.sort(key=str.lower)
+    spam
+[&apos;a&apos;, &apos;A&apos;, &apos;z&apos;, &apos;Z&apos;]</code></pre><h2 id="4-4-字符串和元组"><a href="#4-4-字符串和元组" class="headerlink" title="4.4 字符串和元组"></a>4.4 字符串和元组</h2><p>列表并不是唯一表示序列值的数据类型。</p>
+<h3 id="4-4-1-不可变数据类型"><a href="#4-4-1-不可变数据类型" class="headerlink" title="4.4.1 不可变数据类型"></a>4.4.1 不可变数据类型</h3><p>“改变”一个字符串的正确方式，是使用切片和连接。构造一个“新的”字符串，从老的字符串那里复制一些部分。</p>
+<pre><code>name = &apos;Zophie a cat&apos;
+newName = name[0:7] + &apos;the&apos; + name[8:12]
+print(newName)
+
+Zophie the cat</code></pre><h3 id="4-4-2-元组数据类型"><a href="#4-4-2-元组数据类型" class="headerlink" title="4.4.2 元组数据类型"></a>4.4.2 元组数据类型</h3><p>元组输入时用圆括号()，元组像字符串一样，是不可变的；如果元组中只有一个值，你可以在括号内该值的后面跟上一个逗号——逗号告诉Python，这是一个元组。</p>
+<h3 id="4-4-3-用list-和tuple-函数来转换类型"><a href="#4-4-3-用list-和tuple-函数来转换类型" class="headerlink" title="4.4.3 用list()和tuple()函数来转换类型"></a>4.4.3 用list()和tuple()函数来转换类型</h3><pre><code>print(tuple([&apos;cat&apos;, &apos;dog&apos;, 5]))
+print(list((&apos;cat&apos;, &apos;dog&apos;, 5)))  
+
+(&apos;cat&apos;, &apos;dog&apos;, 5)
+[&apos;cat&apos;, &apos;dog&apos;, 5]</code></pre><h3 id="4-4-4-引用"><a href="#4-4-4-引用" class="headerlink" title="4.4.4 引用"></a>4.4.4 引用</h3><pre><code>spam = [0, 1, 2, 3, 4, 5]
+cheese = spam 
+cheese[1] = &apos;Hello!&apos;
+print(spam)
+print(cheese)
+
+[0, &apos;Hello!&apos;, 2, 3, 4, 5]
+[0, &apos;Hello!&apos;, 2, 3, 4, 5]</code></pre><h3 id="4-4-5-copy模块的copy-和deepcopy-函数"><a href="#4-4-5-copy模块的copy-和deepcopy-函数" class="headerlink" title="4.4.5  copy模块的copy()和deepcopy()函数"></a>4.4.5  copy模块的copy()和deepcopy()函数</h3><p>copy.copy()，可以用来复制列表或字典这样的可变值，而不只是复制引用。</p>
+<pre><code>import copy
+spam = [&apos;Alice&apos;, &apos;ants&apos;, &apos;Bob&apos;, &apos;badgers&apos;]
+cheese = copy.copy(spam)
+cheese[1] = &apos;wo&apos;
+print(cheese)
+print(spam)
+
+
+[&apos;Alice&apos;, &apos;wo&apos;, &apos;Bob&apos;, &apos;badgers&apos;]
+[&apos;Alice&apos;, &apos;ants&apos;, &apos;Bob&apos;, &apos;badgers&apos;]</code></pre><p>deepcopy()函数将同时复制它们内部的列表，即用copy.deepcopy()。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+    <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------帅哥靓女<i class="fa fa-heart"></i>感谢你们的阅读-------------</div>
+    
+</div>
+
+  
+</div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/02/27/第三章复习/" rel="next" title>
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/02/28/第五章复习/" rel="prev" title>
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="RONY CHEN">
+            
+              <p class="site-author-name" itemprop="name">RONY CHEN</p>
+              <p class="site-description motion-element" itemprop="description">保持谦逊，渴望成功</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/ranIrving" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/6409755535" target="_blank" title="Weibo">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:3482918304@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#列表"><span class="nav-number">1.</span> <span class="nav-text">列表</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-列表数据类型"><span class="nav-number">1.1.</span> <span class="nav-text">4.1 列表数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-1-用len-取得列表的长度"><span class="nav-number">1.1.1.</span> <span class="nav-text">4.1.1 用len()取得列表的长度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-2-用下标改变列表中的值"><span class="nav-number">1.1.2.</span> <span class="nav-text">4.1.2 用下标改变列表中的值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-3-列表连接和列表复制"><span class="nav-number">1.1.3.</span> <span class="nav-text">4.1.3 列表连接和列表复制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-4-用del语句从列表中删除值"><span class="nav-number">1.1.4.</span> <span class="nav-text">4.1.4 用del语句从列表中删除值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-使用列表"><span class="nav-number">1.2.</span> <span class="nav-text">4.2 使用列表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-1-列表用于循环"><span class="nav-number">1.2.1.</span> <span class="nav-text">4.2.1 列表用于循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-2-in和not-in-操作符"><span class="nav-number">1.2.2.</span> <span class="nav-text">4.2.2 in和not in 操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-3-多重赋值技巧和操作"><span class="nav-number">1.2.3.</span> <span class="nav-text">4.2.3 多重赋值技巧和操作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-方法"><span class="nav-number">1.3.</span> <span class="nav-text">4.3 方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-1-用index-方法在列表中查找值"><span class="nav-number">1.3.1.</span> <span class="nav-text">4.3.1 用index()方法在列表中查找值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-2-用append-和insert-方法在列表中添加值"><span class="nav-number">1.3.2.</span> <span class="nav-text">4.3.2 用append()和insert()方法在列表中添加值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-3-用remove-方法从列表中删除值"><span class="nav-number">1.3.3.</span> <span class="nav-text">4.3.3 用remove()方法从列表中删除值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-4-用sort-方法将列表中的值排序"><span class="nav-number">1.3.4.</span> <span class="nav-text">4.3.4 用sort()方法将列表中的值排序</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-4-字符串和元组"><span class="nav-number">1.4.</span> <span class="nav-text">4.4 字符串和元组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-1-不可变数据类型"><span class="nav-number">1.4.1.</span> <span class="nav-text">4.4.1 不可变数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-2-元组数据类型"><span class="nav-number">1.4.2.</span> <span class="nav-text">4.4.2 元组数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-3-用list-和tuple-函数来转换类型"><span class="nav-number">1.4.3.</span> <span class="nav-text">4.4.3 用list()和tuple()函数来转换类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-4-引用"><span class="nav-number">1.4.4.</span> <span class="nav-text">4.4.4 引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-5-copy模块的copy-和deepcopy-函数"><span class="nav-number">1.4.5.</span> <span class="nav-text">4.4.5  copy模块的copy()和deepcopy()函数</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+//访客
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">RONY CHEN</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">21.3k</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共21.3k字</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"tagMode":false});</script></body>
+</html>

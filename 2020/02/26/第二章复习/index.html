@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="chenran" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="第二章 控制流2.1 布尔值Boolean（布尔）的首字母大写，“布尔”数据类型只有两种值：True和False。 &amp;gt;&amp;gt;&amp;gt;spam=True &amp;gt;&amp;gt;&amp;gt;spam True2.2 比较操作符（图） ps：整型或浮点型的值永远不会与字符串相等。   &amp;lt;、&amp;gt;、&amp;lt;=和&amp;gt;=操作符仅用于整型和浮点型。 2.3 布尔操作符3个布尔操作符（and、or和no">
+<meta property="og:type" content="article">
+<meta property="og:title" content="chenran">
+<meta property="og:url" content="http://yoursite.com/2020/02/26/第二章复习/index.html">
+<meta property="og:site_name" content="chenran">
+<meta property="og:description" content="第二章 控制流2.1 布尔值Boolean（布尔）的首字母大写，“布尔”数据类型只有两种值：True和False。 &amp;gt;&amp;gt;&amp;gt;spam=True &amp;gt;&amp;gt;&amp;gt;spam True2.2 比较操作符（图） ps：整型或浮点型的值永远不会与字符串相等。   &amp;lt;、&amp;gt;、&amp;lt;=和&amp;gt;=操作符仅用于整型和浮点型。 2.3 布尔操作符3个布尔操作符（and、or和no">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-02-26T15:44:54.296Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="chenran">
+<meta name="twitter:description" content="第二章 控制流2.1 布尔值Boolean（布尔）的首字母大写，“布尔”数据类型只有两种值：True和False。 &amp;gt;&amp;gt;&amp;gt;spam=True &amp;gt;&amp;gt;&amp;gt;spam True2.2 比较操作符（图） ps：整型或浮点型的值永远不会与字符串相等。   &amp;lt;、&amp;gt;、&amp;lt;=和&amp;gt;=操作符仅用于整型和浮点型。 2.3 布尔操作符3个布尔操作符（and、or和no">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/02/26/第二章复习/">
+
+
+
+
+
+  <title> | chenran</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">chenran</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/26/第二章复习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="RONY CHEN">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="chenran">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline"></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-26T22:21:14+08:00">
+                2020-02-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  712 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="第二章-控制流"><a href="#第二章-控制流" class="headerlink" title="第二章 控制流"></a>第二章 控制流</h1><h2 id="2-1-布尔值"><a href="#2-1-布尔值" class="headerlink" title="2.1 布尔值"></a>2.1 布尔值</h2><p>Boolean（布尔）的首字母大写，“布尔”数据类型只有两种值：True和False。</p>
+<pre><code>&gt;&gt;&gt;spam=True
+&gt;&gt;&gt;spam
+True</code></pre><h2 id="2-2-比较操作符"><a href="#2-2-比较操作符" class="headerlink" title="2.2 比较操作符"></a>2.2 比较操作符</h2><p>（图）</p>
+<p>ps：整型或浮点型的值永远不会与字符串相等。<br>   &lt;、&gt;、&lt;=和&gt;=操作符仅用于整型和浮点型。</p>
+<h2 id="2-3-布尔操作符"><a href="#2-3-布尔操作符" class="headerlink" title="2.3 布尔操作符"></a>2.3 布尔操作符</h2><p>3个布尔操作符（and、or和not）用于比较布尔值</p>
+<p>（图）</p>
+<p>只要有一个布尔值为真，or操作符就将表达式求值为True。如果都是False，所求值为False。</p>
+<p>not操作符只作用于一个布尔值（或表达式  ）。not操作符  求值为相反的布尔值。</p>
+<h2 id="2-4-混合布尔和比较操作符"><a href="#2-4-混合布尔和比较操作符" class="headerlink" title="2.4 混合布尔和比较操作符"></a>2.4 混合布尔和比较操作符</h2><p>计算机将先求值左边的表达式，然后再求值右边的表达式。知道两个布尔值后，它又将整个表达式再求值为一个布尔值。</p>
+<pre><code>&gt;&gt;&gt;(4 &lt; 5) and (5 &lt; 6)
+True</code></pre><p>和算术操作符一样，布尔操作符也有操作顺序。在所有算术和比较操作符求值后，Python先求值not操作符， 然后是and操作符 ，然后是or操作符。</p>
+<pre><code>&gt;&gt;&gt; 2 + 2 == 4 and not 2 + 2 == 5 and 2 * 2 == 2 + 2
+True </code></pre><h2 id="2-5-控制流的元素"><a href="#2-5-控制流的元素" class="headerlink" title="2.5 控制流的元素"></a>2.5 控制流的元素</h2><h3 id="2-5-1-if-语句"><a href="#2-5-1-if-语句" class="headerlink" title="2.5.1 if 语句"></a>2.5.1 if 语句</h3><pre><code>if name == &apos;Alice&apos;:
+    print(&apos;Hi, Alice.&apos;)</code></pre><h3 id="2-5-2-while循环"><a href="#2-5-2-while循环" class="headerlink" title="2.5.2 while循环"></a>2.5.2 while循环</h3><pre><code> spam = 0
+ while spam &lt; 5:
+     print(&apos;Hello, world.&apos;)
+     spam = spam + 1
+
+ Hello, world*5
+
+
+name = &apos;&apos;
+while name != &apos;your name&apos;:
+    print(&apos;输入你的名字：&apos;)
+    name = input()
+print(&apos;谢谢。&apos;)</code></pre><p>（图）</p>
+<h3 id="2-5-3-break-语句"><a href="#2-5-3-break-语句" class="headerlink" title="2.5.3 break 语句"></a>2.5.3 break 语句</h3><pre><code>while True:
+    print(&apos;输入你的名字：&apos;)
+    name = input()
+    if name == &apos;your name&apos;:
+        break
+print(&apos;谢谢。&apos;)</code></pre><p>（图）</p>
+<h3 id="2-5-4-continue-语句"><a href="#2-5-4-continue-语句" class="headerlink" title="2.5.4 continue 语句"></a>2.5.4 continue 语句</h3><p>像break语句一样，continue语句用于循环内部。如果程序执行遇到continue语句，就会马上跳回到循环开始处，重新对循环条件求值（这也是执行到达循环末尾时发生的事情）。</p>
+<pre><code>while True:
+    print(&apos;Who are you?&apos;)
+    name = input()
+    if name != &apos;c&apos;:
+        continue
+    print(&apos;Hello, Joe. What is the password? (It is a fish.)&apos;)
+    password = input()
+   if password == &apos;swordfish&apos;:
+       break
+print(&apos;Access granted.&apos;)</code></pre><p>（图）</p>
+<h3 id="2-5-5-for循环和-range-函数"><a href="#2-5-5-for循环和-range-函数" class="headerlink" title="2.5.5 for循环和 range()函数"></a>2.5.5 for循环和 range()函数</h3><pre><code>for i in range(5):</code></pre><p>for关键字；一个变量名；in关键字；调用range()方法，最多传入3个参数；冒号；从下一行开始，缩退的代码块（称为for子句）。</p>
+<pre><code>print(&apos;My name is&apos;) 
+for i in range(5):
+    print(&apos;Jimmy Five Times (&apos; + str(i) + &apos;)&apos;)
+
+
+
+total = 0
+for num in range(101):
+    total = total + num
+print(total)
+
+5050</code></pre><h3 id="2-5-6-等价的-while-循环"><a href="#2-5-6-等价的-while-循环" class="headerlink" title="2.5.6 等价的 while 循环"></a>2.5.6 等价的 while 循环</h3><pre><code>print(&apos;My name is&apos;)
+i = 0
+while i &lt; 5:
+    print(&apos;Jimmy Five Times (&apos; + str(i) + &apos;)&apos;)
+    i = i + 1</code></pre><p>(图)</p>
+<h3 id="2-5-7-range-的开始、停止和步长参数"><a href="#2-5-7-range-的开始、停止和步长参数" class="headerlink" title="2.5.7 range()的开始、停止和步长参数"></a>2.5.7 range()的开始、停止和步长参数</h3><pre><code>for i in range(12, 16):
+    print(i)
+
+for i in range(0,10,2):
+    print(i)
+
+for i in range(5,-1,-1):
+    print(i)</code></pre><h2 id="2-6-sys-exit-提前结束程序"><a href="#2-6-sys-exit-提前结束程序" class="headerlink" title="2.6 sys.exit()提前结束程序"></a>2.6 sys.exit()提前结束程序</h2>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+    <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------帅哥靓女<i class="fa fa-heart"></i>感谢你们的阅读-------------</div>
+    
+</div>
+
+  
+</div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/02/26/python复习1/" rel="next" title>
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/02/27/第三章复习/" rel="prev" title>
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="RONY CHEN">
+            
+              <p class="site-author-name" itemprop="name">RONY CHEN</p>
+              <p class="site-description motion-element" itemprop="description">保持谦逊，渴望成功</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/ranIrving" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/6409755535" target="_blank" title="Weibo">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:3482918304@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第二章-控制流"><span class="nav-number">1.</span> <span class="nav-text">第二章 控制流</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-布尔值"><span class="nav-number">1.1.</span> <span class="nav-text">2.1 布尔值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-比较操作符"><span class="nav-number">1.2.</span> <span class="nav-text">2.2 比较操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-布尔操作符"><span class="nav-number">1.3.</span> <span class="nav-text">2.3 布尔操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-混合布尔和比较操作符"><span class="nav-number">1.4.</span> <span class="nav-text">2.4 混合布尔和比较操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-5-控制流的元素"><span class="nav-number">1.5.</span> <span class="nav-text">2.5 控制流的元素</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-1-if-语句"><span class="nav-number">1.5.1.</span> <span class="nav-text">2.5.1 if 语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-2-while循环"><span class="nav-number">1.5.2.</span> <span class="nav-text">2.5.2 while循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-3-break-语句"><span class="nav-number">1.5.3.</span> <span class="nav-text">2.5.3 break 语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-4-continue-语句"><span class="nav-number">1.5.4.</span> <span class="nav-text">2.5.4 continue 语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-5-for循环和-range-函数"><span class="nav-number">1.5.5.</span> <span class="nav-text">2.5.5 for循环和 range()函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-6-等价的-while-循环"><span class="nav-number">1.5.6.</span> <span class="nav-text">2.5.6 等价的 while 循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-7-range-的开始、停止和步长参数"><span class="nav-number">1.5.7.</span> <span class="nav-text">2.5.7 range()的开始、停止和步长参数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-6-sys-exit-提前结束程序"><span class="nav-number">1.6.</span> <span class="nav-text">2.6 sys.exit()提前结束程序</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+//访客
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">RONY CHEN</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">21.3k</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共21.3k字</span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"tagMode":false});</script></body>
+</html>
